@@ -2,20 +2,15 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/edwinbaeza/Algoritmos/Listas"
+	"github.com/edwinbaeza/Algoritmos/list"
 )
 
 func main() {
 	fmt.Println("Inicio de Insercion")
-	lista := new(Listas.ListaLigada)
+	lista := new(list.LinkedList)
 
-	// if lista.Primero == nil {
-	// 	fmt.Println("Si es nil primero")
-	// }
-	lista.Agregar("Edwin")
-	//fmt.Println(lista.Primero.Data)
-	lista.Agregar("David")
-	lista.Agregar("Virgilio")
-	lista.Recorrer()
+	lista.Add("Edwin")
+	lista.Add("David")
+	lista.Add("Virgilio")
+	lista.PrintList()
 }
